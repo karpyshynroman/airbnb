@@ -37,6 +37,12 @@ body, p, h2, h3 {
 .menu__items {
   display: flex;
 }
+.menu__items__ul {
+  list-style-type: none;
+}
+.menu__items__ul > li {
+  display: inline;
+}
 .menu__item {
   margin-top: 21px;
   margin-left: 30px;
@@ -163,9 +169,19 @@ body, p, h2, h3 {
   }
 }
 @media screen and (max-width: 438px) {
+  .apartment__book {
+    flex-direction: column;
+    width: 100%;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
   .apartment__description {
     width: 100%;
     margin-bottom: 80px;
+  }
+
+  .book {
+    width: 100%;
   }
 }
 .book {
@@ -213,7 +229,7 @@ body, p, h2, h3 {
 }
 @media screen and (max-width: 400px) {
   .book {
-    width: 100%;
+    width: 90%;
   }
 }
 .reviews {
