@@ -1,0 +1,360 @@
+body {
+  font-size: 16px;
+  line-height: 19px;
+  font-family: "Avenir", sans-serif;
+  color: #3D4E61;
+}
+
+body, p, h2, h3 {
+  margin: 0;
+}
+
+@font-face {
+  font-family: "AvenirH";
+  src: url(../fonts/Avenir-Heavy.ttf);
+}
+@font-face {
+  font-family: "Avenir";
+  src: url(../fonts/Avenir-Book.ttf);
+  font-style: normal;
+}
+.header {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  white-space: nowrap;
+}
+.menu__logo {
+  width: 30px;
+  height: 30px;
+  margin: 15px 26px;
+}
+.menu__items {
+  display: flex;
+}
+.menu__item {
+  margin-top: 21px;
+  margin-left: 30px;
+}
+.menu__link {
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "AvenirH", sans-serif;
+  line-height: 19px;
+  color: #3D4E61;
+}
+.menu__photo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 15px 19px 15px 38px;
+}
+
+@media screen and (max-width: 600px) {
+  .menu {
+    justify-content: center;
+  }
+  .menu__items {
+    justify-content: space-between;
+  }
+  .menu__item {
+    margin-left: 15px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .menu {
+    transform: scale(0.8);
+  }
+}
+.apartment {
+  width: 100%;
+  margin: 0 auto;
+}
+.apartment__photo {
+  background-image: url(../images/Main-photo.jpg);
+  width: 100%;
+  height: 464px;
+  background-size: cover;
+  background-position: center;
+}
+.apartment__book {
+  width: 901px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 39px;
+}
+.apartment__heading {
+  height: 48px;
+  font-family: "AvenirH", sans-serif;
+  font-size: 36px;
+  line-height: 42px;
+  white-space: nowrap;
+  margin: 0;
+}
+.apartment__type {
+  margin-top: 10px;
+  height: 29px;
+  color: #687C94;
+}
+.apartment__rooms {
+  height: 29px;
+  margin-top: 15px;
+  display: flex;
+}
+.apartment__rooms > span {
+  width: 81px;
+  display: block;
+}
+.apartment__rooms > :first-child {
+  margin-right: 11.5px;
+}
+.apartment__rooms > :last-child {
+  margin-left: 5.5px;
+}
+.apartment__description {
+  width: 491px;
+  height: 120px;
+  line-height: 24px;
+  margin-top: 28px;
+}
+.apartment__host {
+  height: 29px;
+  margin-top: 5.5px;
+  font-family: "AvenirH", sans-serif;
+}
+.apartment__amenities_heading {
+  height: 28px;
+  font-size: 20px;
+  line-height: 23px;
+  font-family: "AvenirH", sans-serif;
+  margin-top: 44px;
+  margin-bottom: 21px;
+}
+.apartment__amenities_row {
+  height: 29px;
+  margin-bottom: 13px;
+  display: flex;
+}
+.apartment__amenities_row > span {
+  width: 176px;
+  margin-right: 20px;
+  display: block;
+}
+.apartment__amenities_other {
+  height: 29px;
+  font-family: "AvenirH", sans-serif;
+}
+
+@media screen and (max-width: 999px) {
+  .apartment__book {
+    flex-direction: column;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .apartment__description {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 438px) {
+  .apartment__description {
+    width: 100%;
+    margin-bottom: 80px;
+  }
+}
+.book {
+  width: 330px;
+  height: 319px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 30px 30px 38px;
+  border-radius: 3px;
+  border: 1px solid #E1E7ED;
+}
+.book__price {
+  line-height: 24px;
+}
+.book__input {
+  border: 1px solid #E1E7ED;
+  box-sizing: border-box;
+  border-radius: 3px;
+  height: 50px;
+  padding-left: 17px;
+}
+.book__input_date {
+  margin-top: 39px;
+}
+.book__input_guests {
+  margin-top: 16px;
+}
+.book__btn {
+  height: 50px;
+  background-color: #FD5C63;
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+  margin-top: 24px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 999px) {
+  .book {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .book {
+    width: 100%;
+  }
+}
+.reviews {
+  width: 901px;
+  margin: 66px auto 0 auto;
+}
+.reviews__heading {
+  font-family: "AvenirH";
+  font-size: 28px;
+  line-height: 33px;
+}
+
+@media screen and (max-width: 999px) {
+  .reviews {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+.person {
+  margin-top: 34px;
+}
+.person__info {
+  display: flex;
+}
+.person__photo {
+  width: 50px;
+  height: 50px;
+  object-fit: fill;
+  border-radius: 50%;
+}
+.person__name_date {
+  margin-left: 21px;
+}
+.person__name {
+  font-family: "AvenirH";
+  font-size: 20px;
+  line-height: 27px;
+}
+.person__date {
+  margin-top: 2px;
+  font-size: 18px;
+  line-height: 28px;
+}
+.person__comment {
+  margin-top: 15px;
+  width: 490px;
+}
+
+@media screen and (max-width: 999px) {
+  .person__comment {
+    width: 100%;
+  }
+}
+.host {
+  width: 901px;
+  margin: 75px auto 0 auto;
+}
+.host__heading {
+  font-size: 28px;
+  line-height: 33px;
+  font-family: "Roboto", sans-serif;
+}
+.host__location {
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 11px;
+}
+.host__text {
+  width: 490px;
+  margin-top: 15px;
+}
+.host__btn {
+  width: 150px;
+  height: 50px;
+  color: #118488;
+  border: 1px solid #118488;
+  background-color: #fff;
+  border-radius: 4px;
+  margin: 30px 0 75px 0;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 999px) {
+  .host {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .host__text {
+    width: 100%;
+  }
+  .host__btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.footer {
+  box-shadow: 0px -1px 0px #E1E7ED;
+}
+.footer__content {
+  display: flex;
+  width: 901px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 999px) {
+  .footer__content {
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 321px) {
+  .footer__content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__content__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+.links {
+  width: 175px;
+  margin: 45px 200px 45px 0;
+}
+.links__heading {
+  font-family: "AvenirH";
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 999px) {
+  .links {
+    width: 75px;
+    margin-right: 50px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

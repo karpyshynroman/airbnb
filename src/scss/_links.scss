@@ -1,0 +1,16 @@
+.links {
+  width: 175px;
+  margin: 45px 200px 45px 0;
+
+  &__heading {
+    font-family: 'AvenirH';
+    margin-bottom: 20px; 
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .links {
+    width: 75px;
+    margin-right: 50px;
+  }
+} 

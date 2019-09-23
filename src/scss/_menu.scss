@@ -1,0 +1,55 @@
+.menu {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  white-space: nowrap;
+
+  &__logo {
+    width: 30px;
+    height: 30px;
+    margin: 15px 26px;
+  }
+
+  &__items {
+    display: flex;
+  }
+
+  &__item {
+    margin-top: 21px;
+    margin-left: 30px;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-size: 16px;
+    font-family:  'AvenirH', sans-serif;
+    line-height: 19px;
+    color: #3D4E61;
+  }
+
+  &__photo {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 15px 19px 15px 38px;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .menu {
+    justify-content: center;
+    &__items {
+      justify-content: space-between;
+    }
+    &__item {
+      margin-left: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .menu {
+    transform: scale(0.8);
+  }
+}

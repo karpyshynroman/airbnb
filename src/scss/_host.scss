@@ -1,0 +1,50 @@
+.host {
+  width: 901px;
+  margin: 75px auto 0 auto;
+
+  &__heading {
+    font-size: 28px;
+    line-height: 33px;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  &__location {
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 11px;
+  }
+
+  &__text {
+    width: 490px;
+    margin-top: 15px;
+  }
+
+  &__btn {
+    width: 150px;
+    height: 50px;
+    color: #118488;
+    border: 1px solid #118488;
+    background-color: #fff;
+    border-radius: 4px;
+    margin: 30px 0 75px 0;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .host {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    &__text {
+      width: 100%;
+    }
+
+    &__btn {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}

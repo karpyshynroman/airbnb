@@ -1,0 +1,18 @@
+.reviews {
+  width: 901px;
+  margin: 66px auto 0 auto;
+
+  &__heading {
+    font-family: 'AvenirH';
+    font-size: 28px;
+    line-height: 33px;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .reviews {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
